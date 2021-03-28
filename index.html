@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emotion Recogniton App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <h3 class="btn btn-default  heading">Emotion Recogniton App</h3>
+                <br>
+                <br>
+                <p style="font-size: 22px;">This model is trained to identify the following emotions:</p>
+                <ul class="names_of_emotions">
+                    <li>Happy</li>
+                    <li>Sad</li>
+                    <li>Angry</li>
+                    <li>Confused</li>
+                    <li>Scared/Worried</li>
+                </ul>
+                <label webcam-view>Camera</label>
+                <div id="camera">
+                    <br>
+                </div>
+                <div id="result">
+                    <br>
+                    <br>
+                </div>
+                <input type="button" class="btn btn-info" onclick="takeSnapshot();" value="Capture Image">
+                <br>
+                <input type="button" class="btn btn-info" value="Check Emotion" onclick="checkEmotion();">
+                <br>
+                <p style="font-size: 22px;">Emotion: <span id="emotion_name"></span></p>
+                <p style="font-size: 22px;">Accuracy: <span id="accuracy"></span></p>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
+
+ 

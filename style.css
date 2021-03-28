@@ -1,0 +1,24 @@
+body {
+background-color: darkorange;
+padding: 8px;
+}
+
+.heading {
+width: 80%;
+font-size: 20px;
+}
+
+.names_of_emotions {
+background-color: darkslategrey;
+padding: 8px;
+}
+
+#camera {
+border-width: 2px;
+width: 50%;
+height: 50%;
+}
+
+#emotion_name, #accuracy {
+color: black;
+}
