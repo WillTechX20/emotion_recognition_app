@@ -18,7 +18,7 @@ function onModelLoaded(){
     console.log('Model Loaded!');
 }
 
-var classifier=ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/T4GppfZyY/', onModelLoaded);
+var classifier=ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/T4GppfZyY/model.json', onModelLoaded);
 
 function displayResults(error, results){
     if(error){
